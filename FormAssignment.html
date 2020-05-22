@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <title>patient Details</title>
+</head>
+
+<body>
+     <h1> Patient details</h1>
+<form>
+     <fieldset>
+	  <legend>Personal Infornation</legend>
+	   
+	     <label for="fname">Firs Name:</label>
+         <input type="text" id="fname" placeholder="First Name" name="fname" required ><br>
+		 <label for="Gender">Gender:</label>
+         <input type="radio" name="Gender"required>male
+         <input type="radio" name="Gender"required>female<br>
+		 <label for="Lname">Las Name:</label>
+         <input type="text" id="Lname" placeholder="Last Name" name="LastName"required><br>
+		 <label for="nationality" >Nationality:</label>
+		 <select id="nationality" name="Nationality">
+		 <option value="Canadian" selected>Canadian</option>
+		 <option value="indian" selected>Indian</option>
+          <option value="usa" selected>USA</option>	
+          </select>
+		  <br>
+          <label for="address">Address:</label>
+          <textarea name="message" rows="10" cols="40"></textarea>
+		 </fieldset>
+</form>
+<br>
+<br>
+<form>
+<fieldset>
+ <legend>Medical History </legend>
+  <input type="checkbox" id="disease" name="disease" value="Smallpox">
+  <label for="disease">Smallpox</label>
+  <input type="checkbox" id="disease" name="disease" value="Smallpox">
+  <label for="disease">Mumps</label>
+  <input type="checkbox" id="disease" name="disease" value="Smallpox">
+  <label for="disease">Dizzness</label>
+  <input type="checkbox" id="disease" name="disease" value="Smallpox">
+  <label for="disease">Sneezing</label>
+  
+ </fieldset>
+  </form>
+ <form>
+ <fieldset>
+ <legend>Current Medication</legend>
+  <label for="medication"> Are you currently taking any medication?</label>
+  <input type="radio" id="medication" name="medication">Yes
+  <input type="radio" id="medication" name="medication">No<br>
+  <label for="massage"> If you currently taking medication, please indicate it in space below:
+  <br>
+  <textarea name"message" rows="15" cols="100">
+  </textarea>
+  </fieldset>
+  <br>
+  <input type="Submit" value="Submit">
+  <input type="Reset" value="Reset"
+  <body>
+  </html>
+  
