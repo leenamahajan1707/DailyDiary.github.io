@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    
+   <title>Write New Entries</title>
+   <link rel="stylesheet" href="WriteNewEntries.css">
+     <style>
+	 body{
+	  margin:0px;
+	 }
+	 .image{
+	  background-image:url("homepagebagr.jpeg");
+	  z-index:-1;
+	  content:"";
+	  height:100%;
+	  width:100%;
+	  position:fixed;
+	  background-size:cover;
+	  
+	 }
+     .container{
+	   display:grid;
+	   grid-template-areas:
+	   
+	   's s s s s s'
+	   'f f f f f f'
+	   't t t t t t';
+	   grid-gap:0rem;
+       padding: 2px;
+	   margin:0px;
+	   width:100%;
+	   
+	   
+	 }
+	 .item1{
+	   grid-area:f;
+	  }
+	  .item2{
+	   grid-area:s;
+	  }
+	  .item3{
+	   grid-area:t;
+	  }
+	  label{
+	    font-size:25px;
+		color:solid black;
+	  }
+	  
+	 </style>
+</head>
+<body>
+        <div class="image"></div>
+       <div  class="container">
+         <div id="s" class="item2">
+           <nav>
+	       <ul>
+		   <li><img src="logo.png" height="69px" width="129px"></li>
+		    <div id="logo_side">
+		      <li><a href="Homepage.html">Home</a></li>
+		      <li> <a href="" >About Us</a></li>
+		      <li><a href="" >Contact Us</a></li>
+		    </div>
+			  <div id="lg">
+	          <li><a href="">My entries</a></li>
+              <li><a href="">Write new entry</a></li>
+	          <li><a href="">Logout</a></li>
+			  </div>
+			  </ul>
+		  </nav>
+          </div>
+		  <div id="f" class="item1">
+		     <p>Create your own diary here!</p>
+		  </div>
+	<div id="t" class="item3">
+		 <form action="" method="post">
+		     <label for="appd">Select a date:</label>
+             <input class="adjust-date" type="date" id="appd" name="appd">
+		      <br>
+			  <br>
+           <label for="appt">Select a time:</label>
+           <input class="adjust-time"type="time" id="appt" name="appt">
+		   <br>
+		   <br>
+		   <label for="title"> Title&emsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp; :</label>
+		   <input class="adjust-title"type="text" id="title" name="title" placeholder="Enter title"required>
+		   <br>
+		    
+			<p class="adjust-area">
+		   <label for="title">Entry &emsp;&emsp;:</label>
+		   <textarea  id="title" name="title" rows="20" cols="70" placeholder="Enter your notes here..." 
+		   style="border:2px solid green;"required></textarea>
+            </p>
+			<br>
+			
+			<input class="smt" type="submit" id="smt" value="Save entry">
+		</form>
+	  </div>
+	  <footer>
+        <p>Contact information: daily diary</p>
+		<p>All Rights reserved &copy; cdac graduates</p>
+		<p>If you have any suggestions or problems with this 
+		   Internet diary, please let us know.</p>
+		   
+    </footer>  
+	</div>
+		
+         
+     
+ 
+   
+          
+</body>
+</html>
+ 
