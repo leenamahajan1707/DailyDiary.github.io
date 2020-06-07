@@ -6,14 +6,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">  <!--use for google font-->
         <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">  <!-- use for animation-->
+      <style>
+        .container
+        {
+          display: grid;
+          grid-template-areas: 
+          'n n n n'
+          's s s s'
+          'l l l l'
+          'a a a a'
+          'f f f f';
+        }
 
+        #navbar
+        {
+          grid-area: n;
+        }
+
+        #section
+        {
+          grid-area: s;
+        }
+
+        #login
+        {
+          grid-area: l;
+        }
+        #about
+        {
+          grid-area: a;
+        }
+        #footer
+        {
+          grid-area: f;
+        }
+      </style>
     </head>
     <body>
         <div class="container">
         <header>
             <nav id="navbar"> 
-                <!-- <div class="logo"><h1 class="animate__animated animate__heartBeat"><img src="https://img.icons8.com/cotton/64/000000/book.png" height="50px"/>My Diary</h1></div> -->
-                <div class="logo">
+                <!-- <div class="logo" style="margin-top: 5vh;"><h1 class="animate__animated animate__heartBeat"><img src="images/Dlogo.jpg" height="70px"/></h1></div> -->
+                <!-- <div class="logo">
 					<h1 class="animate__animated animate__heartBeat">
 						<div class="img">
 							<img src="https://img.icons8.com/flat_round/64/000000/bookmark-book.png"/>
@@ -23,7 +57,19 @@
 						</div>
 						
 					</h1>
-				</div>
+                </div> -->
+                <div class="logo">
+                    <div class="animate__animated animate__heartBeat">
+                      <div class="img">
+                        <img src="images/neonlogo.png" height="50px"/>
+                      </div>
+                      <div class="text">
+                        <h1>My Diary <br>
+                        <h6>my personal space....<br></h6></h1>
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="menu">
                    <a href="#section" class="hoverclass">Home</a>
                    <a href="#about" class="hoverclass">About</a>
@@ -36,18 +82,17 @@
                <section id="section">
                         <h1 >Welcome to the free online diary</h1>
                         
-                        <!-- <div class="logo"><img src="https://img.icons8.com/cotton/64/000000/book.png" height="50px"/>My Diary</h1></div> -->
                         <div class="logo">
-                            <h1 class="animate__animated animate__heartBeat">
-                                <div class="img" style="z-index: 1;">
-                                    <img src="https://img.icons8.com/flat_round/64/000000/bookmark-book.png" style="margin-left: 18vw;  ;"/>
-                                </div>
-                                <div class="text">
-                                    My Diary
-                                </div>
-                                
-                            </h1>
-                        </div>
+                            <div class="animate__animated animate__heartBeat">
+                              <div class="img" style="margin-left: 20vw;z-index: 1;">
+                                <img src="images/neonlogo.png" height="50px"/>
+                              </div>
+                              <div class="text">
+                                <h1 style="color: #45f3ff;">My Diary <br>
+                                <h6 style="font-size: 19px;">my personal space....<br></h6></h1>
+                              </div>
+                            </div>
+                          </div>
 
                         <pre>We are an online diary service, providing personal diaries and journals - it's free at my-diary.org! 
          Our focus is on security and privacy, and all diaries are private by default.
