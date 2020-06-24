@@ -8,7 +8,7 @@
 body{
 	width:100%;
 	height:100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url("../images/diarynew.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url("../images/diarynew.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -80,7 +80,7 @@ nav .menu{
 nav .menu a{
 	letter-spacing: 5px;
 	width:50%;
-	font-size: 25px;
+	font-size: 27px;
 	text-decoration:none;
 	color: cyan;
 	font-weight: 500;
@@ -89,46 +89,40 @@ nav .menu a{
 	
 }
 
-.img
+nav .menu .entry1
 {
-	z-index: -1;
-	position: absolute;
-	margin-left: 10vw;
+	flex-basis: 540px;
 }
-.text
+
+nav .menu .entry2
 {
-	position: relative;
-	z-index: 1;
-	color: rgb(125, 253, 40);
-	font-weight: 900;
-	text-shadow: 2px 1px 5px black;
-	letter-spacing: 2px;
+	flex-basis: 540px;
 }
 
 .menu .hoverclass:hover
 {
 	color: white;
-	font-size: 170%
+	font-size: 190%
 }
 .menu .btnone
 {
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	border-radius: 10px;
 	margin-right: 2vw;
 	text-align: center;
-	background: rgba(190, 174, 174,0.5);
-	font-size: 20px;
+	/* background: rgba(190, 174, 174,0.5); */
+	/* font-size: 25px; */
 	padding: 3px;
 	border-radius: 4px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	color:rgb(77, 255, 187);
+	color:rgb(77, 255, 92);
 }
 
 .btnone:hover, .btnone:active{
-	background:darkslategray;
+	background:rgb(37, 139, 139);
 	color: white;
-	font-size: 150%
+	font-size: 190%
 }
 
 /* .item2{
@@ -191,16 +185,16 @@ nav .menu a{
 
 }
 .item3{
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.4);
 	border:1.5px solid wheat;
 	border-radius: 30px;
-	width:1000px;
+	width:750px;
 	height:580px;
-	margin-left:200px;
+	margin-left:300px;
 	margin-right:10px;
 	color: rgb(75, 255, 240);
 	text-shadow: 2px 1px 5px black;	
-	padding: 25px;
+	padding: 30px;
 	text-align: center;
 }
 
@@ -220,8 +214,8 @@ nav .menu a{
 	  width:300px;
 	   padding:20px;
 	   border: 1px solid rgb(110, 216, 248);
-	  font-size:12px;
-	  overflow:auto;
+	  font-size:20px;
+	  /* overflow:auto; */
 	  border-radius:12px;
 	  margin-top:5px ;
 	  margin-bottom: 5px;
@@ -237,21 +231,22 @@ nav .menu a{
 	  border-radius:12px;
 	  margin-top:10px ;
 	  margin-bottom: 30px;
+	  cursor: pointer;
 }
 .adjust-area * {
   vertical-align: middle;
   /* border: 1px solid rgb(110, 216, 248); */
   border-radius:12px;
-  
+  cursor: pointer;
 }
 #smt{
 	height:50px;
 	  width:200px;
 	   padding:5px;
 	   border: 1px solid rgb(110, 216, 248);
-	  font-size:20px;
-	  overflow:auto;
-	  margin-left:130px;
+	  font-size:24px;
+	  /* overflow:auto; */
+	  margin-left:100px;
 	  margin-top: 10px;
 	  cursor:pointer;
 	  border-radius:12px;
@@ -259,11 +254,12 @@ nav .menu a{
 }
 .smt:hover{
 	background-color:rgb(172, 25, 110);
-	color:wheat
+	color:wheat;
+	font-size: 170%;
 	
 }
 footer{
-	background:rgba(0,0,0,0.5);
+	background:rgba(0,0,0,0.7);
 	display: flex;
 	flex-direction: column;
 	color:rgb(255, 255, 255);
@@ -305,3 +301,7 @@ select, textarea {
   label{
 	  font-size: 70px;
   }
+
+::placeholder{
+	color: white;
+}

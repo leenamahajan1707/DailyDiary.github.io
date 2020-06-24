@@ -1,2 +1,0 @@
-# DailyDiary
-maintaining daily diary

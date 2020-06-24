@@ -6,7 +6,7 @@
   }
  
   body{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url("../images/diarynew.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url("../images/diarynew.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -16,7 +16,7 @@
   nav{
     width:100%;
     height:15vh;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
     color: rgb(64, 231, 72);
     display:flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ nav .logo .text {
 	font-family: 'Josefin Sans', sans-serif;
   z-index: 1;}
   
-.img
+/* .img
 {
 	z-index: -1;
 	position: absolute;
@@ -78,7 +78,7 @@ nav .logo .text {
 	font-weight: 900;
 	text-shadow: 2px 1px 5px black;
 	letter-spacing: 2px;
-}
+} */
 
   
   nav .menu{
@@ -93,7 +93,7 @@ nav .logo .text {
   nav .menu a{
     letter-spacing: 5px;
     width:40%;
-    font-size: 25px;
+    font-size: 27px;
     text-decoration:none;
     color: cyan;
     font-weight: 500;
@@ -101,31 +101,41 @@ nav .logo .text {
     transition:all .5s ease;
     
   }
+
+nav .menu .entry1
+{
+	flex-basis: 450px;
+}
+
+nav .menu .entry2
+{
+	flex-basis: 450px;
+}
   
   .menu .hoverclass:hover
   {
     color: white;
-    font-size: 130%
+    font-size: 190%
   }
   .menu .btnone
   {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 10px;
     margin-right: 2vw;
     text-align: center;
-    background: rgba(190, 174, 174,0.5);
-    font-size: 20px;
+    /* background: rgba(190, 174, 174,0.5); */
+    /* font-size: 20px; */
     padding: 3px;
     border-radius: 4px;
     font-weight: 500;
     letter-spacing: 1px;
-    color:rgb(77, 255, 187);
+    color:rgb(77, 255, 92);
   }
   
   .btnone:hover, .btnone:active{
-    background:darkslategray;
+    background:rgb(37, 139, 139);
     color: white;
-    font-size: 150%
+    font-size: 190%
   }
   
 
@@ -141,7 +151,7 @@ nav .logo .text {
     margin-top: 20vh;
     margin-bottom: 30px;
     margin-right: 33vw;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 700;
 	  letter-spacing: 3px;
     text-shadow: 2px 1px 5px black;
@@ -168,17 +178,18 @@ select, textarea {
   input[type="submit"]
   {
       border: none;
-      padding: 7px 35px;
+      padding: 3px 35px;
       cursor: pointer;
       outline: none;
       background: #45f3ff;
       color: black;
-      font-size: 18px;
-      border-radius: 2px;
+      font-size: 25px;
+      border-radius: 4px;
   }
   
   input[type=submit]:hover {
-    background-color: rgb(224, 92, 92);
+    background-color:rgb(71, 255, 117);
+    font-size: 160%;
   }
   
  ::placeholder
@@ -192,16 +203,16 @@ select, textarea {
       /* background-color:rgba(0,0,0,0.1); */
       padding: 10px;
     margin-bottom: 10vh;
-    margin-left: 25vw;
+    margin-left: 26vw;
   }
   
   
   .column {
    
-    width: 50%;
+    width: 55%;
     margin-top: 6px;
     padding: 20px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
   }
 
   #country option{
@@ -210,7 +221,7 @@ select, textarea {
   }
   
   footer{
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
     display: flex;
     flex-direction: column;
     color:rgb(255, 255, 255);

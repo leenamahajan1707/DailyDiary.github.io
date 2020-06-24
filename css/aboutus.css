@@ -8,7 +8,7 @@
 body{
 	width:100%;
 	height:100vh;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url("../images/diarynew.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)), url("../images/diarynew.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -17,7 +17,7 @@ body{
 nav{
 	width:100%;
 	height:15vh;
-	background:rgba(0,0,0,0.3);
+	background:rgba(0,0,0,0.7);
 	
 	display:flex;
 	justify-content: space-between;
@@ -91,7 +91,7 @@ nav .menu{
 nav .menu a{
 	letter-spacing: 5px;
 	width:40%;
-	font-size: 25px;
+	font-size: 27px;
 	text-decoration:none;
 	color: cyan;
 	font-weight: 500;
@@ -100,19 +100,29 @@ nav .menu a{
 	
 }
 
+nav .menu .entry1
+{
+	flex-basis: 450px;
+}
+
+nav .menu .entry2
+{
+	flex-basis: 450px;
+}
+
 .menu .hoverclass:hover
 {
 	color: white;
-	font-size: 170%
+	font-size: 190%
 }
 .menu .btnone
 {
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	border-radius: 10px;
 	margin-right: 2vw;
 	text-align: center;
-	background: rgba(190, 174, 174,0.5);
-	font-size: 20px;
+	/* background: rgba(190, 174, 174,0.5);
+	font-size: 20px; */
 	padding: 3px;
 	border-radius: 4px;
 	font-weight: 500;
@@ -121,9 +131,9 @@ nav .menu a{
 }
 
 .btnone:hover, .btnone:active{
-	background:darkslategray;
+	background:rgb(37, 139, 139);
 	color: white;
-	font-size: 150%
+	font-size: 190%
 }
 
 
@@ -145,11 +155,23 @@ nav .menu a{
     
     padding: 100px;
 	text-align: center;
-	background: rgba(45, 54, 80, 0.6);
-    /* background-color: #474e5d; */
+	/* background: rgba(45, 54, 80, 0.3); */
+	/* background-color: #474e5d; */
+	/* background: rgba(155, 243, 243, 0.1); */
 	color:white;
-	font-size: 20px;
+	font-size: 25px;
 	height: 50vh;
+	text-shadow: 1px solid black;
+  }
+
+  #team
+  {
+	text-align:center;
+	color:rgb(159, 250, 54);
+	text-shadow: 2px 1px 5px black;
+	 font-size: 30px;
+	 margin-top: 6vh;
+	 letter-spacing: 1px;
   }
   
   .container {
@@ -157,34 +179,42 @@ nav .menu a{
     padding: 0 2.5px;
   }
   
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    outline: 0;
-    display: inline-block;
-    padding: 4px;
-    color: white;
-    background-color:#474e5d;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
+ 
   .desc{
 	  color: white;
 	  text-shadow: 2px 1px 5px black;
 	  /* background: rgba(0,0,0,0.5); */
+	  padding: 15px;
+	  text-align: center;
   }
-  .gallery
+
+
+  div .gallery
   {
 	background: rgba(0,0,0,0.5);
-	  align-items: center;
+	align-items: center;
+	margin: 4px;
+ 	border: 1px solid #43f3ff;
+  /* float: center; */
+  	display:inline-block;
+   	margin-left:150px;
+  	width: 250px;
+  }
+
+  div .gallery:hover {
+	border: 2px solid rgb(34, 247, 105);
+  }
+
+.gallery img{
 	
+	margin-left: 2.7vw;
+	margin-top: 3vh;
+	width:100px;
+  	height:200px;
   }
 
   footer{
-	background:rgba(0,0,0,0.5);
+	background:rgba(0,0,0,0.7);
 	display: flex;
 	flex-direction: column;
 	color:rgb(255, 255, 255);
@@ -193,4 +223,5 @@ nav .menu a{
 	justify-content: center;
 	align-items: center;
 	margin-top: 10rem;
+	font-size: 20px;
 }

@@ -7,7 +7,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">  <!--use for google font-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">  <!-- use for animation-->
-
+   <script type="text/javascript" src="js/entry.js" ></script>
 </head>
 <body>
    <header>
@@ -29,7 +29,7 @@
          <div class="logo">
             <div class="animate__animated animate__heartBeat">
               <div class="img">
-                <img src="images/neonlogo.png" height="50px"/>
+                <img src="images/neonlogo.png" height="50px" alt="logo"/>
               </div>
               <div class="text">
                 <h1>My Diary <br>
@@ -40,19 +40,29 @@
           
          <div class="menu"> 
             <a href="home.html" class="hoverclass">Home</a>
-            <a href="WriteNewEntries.html" class="hoverclass">New Entry</a>
-            <a href="myentries.html" class="hoverclass">My Entries</a>
+            <a href="WriteNewEntries.html" class="hoverclass , entry1">New Entry</a>
+            <a href="myentries.html" class="hoverclass , entry2">My Entries</a>
             
-            <a href="aboutus.html" class="hoverclass">About</a>
+            <!-- <a href="aboutus.html" class="hoverclass">About</a> -->
             <a href="contactUsHome.html" class="hoverclass">Contact</a>
             <a href="index.html" class="btnone">Logout</a>
          </div>
       </nav>
       <main>
          <section>
-            <h1 class="animate__animated animate__bounce">welcome</h1>
-            <pre>your entries will be shown here!!!!!</pre>
-            </h1>
+            <div>
+               <h1 class="animate__animated animate__bounce">Entries</h1>
+            </div>
+            <div class="data">
+               <table id="display">
+                  <tr>
+                      <th style="width: 15%;">Date</th>
+                      <th style="width: 10%;">Time</th>
+                      <th style="width: 20%;">Title</th>
+                      <th style="width: 50%;">Note</th>
+                  </tr>
+              </table>
+            </div>
          </section>
       </main>
    </header> 
